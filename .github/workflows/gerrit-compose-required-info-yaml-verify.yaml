@@ -65,7 +65,7 @@ jobs:
     steps:
       - name: Gerrit Checkout
         # yamllint disable-line rule:line-length
-        uses: lfit/checkout-gerrit-change-action@54d751e8bd167bc91f7d665dabe33fae87aaaa63 # v0.9
+        uses: askb/checkout-gerrit-change-action@f555e9a4e15dd50c725190c6d9350cc72a0541a0 # https://github.com/lfit/checkout-gerrit-change-action/pull/36
         with:
           gerrit-refspec: ${{ inputs.GERRIT_REFSPEC }}
           gerrit-project: ${{ inputs.GERRIT_PROJECT }}
